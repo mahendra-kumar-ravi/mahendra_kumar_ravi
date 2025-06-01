@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mahendra Kumar Ravi | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #6cf1af, #764ba2);
+      color: #f0f0f0;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    header {
+      background: rgba(0,0,0,0.6);
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      width: 100%;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffd700;
+    }
+    .hero {
+      background: rgba(0,0,0,0.4);
+      color: white;
+      padding: 30px 10px;
+      text-align: center;
+      width: 100%;
+      max-width: 1000px;
+      margin: 30px 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    .resume-button {
+      display: inline-block;
+      background-color: #ffd700;
+      color: #333;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .resume-button:hover {
+      background-color: #e6c200;
+    }
+
+    main {
+      width: 100%;
+      max-width: 1000px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    /* New flex container rows for pairs */
+    .row {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .left-column, .right-column {
+      background: rgba(0,0,0,0.3);
+      padding: 30px 25px;
+      border-radius: 10px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+      flex: 1 1 400px;
+      min-width: 300px;
+      color: #f0f0f0;
+    }
+
+    h2.section-title {
+      font-size: 28px;
+      margin-bottom: 20px;
+      border-bottom: 3px solid #ffd700;
+      display: inline-block;
+      padding-bottom: 5px;
+      color: #ffd700;
+    }
+
+    p {
+      margin-bottom: 20px;
+      font-size: 16px;
+      color: #ddd;
+    }
+
+    .skills span {
+      background: #764ba2;
+      color: #fff;
+      padding: 7px 14px;
+      margin: 5px;
+      display: inline-block;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+    .skills span:hover {
+      background: #ffd700;
+      color: #333;
+      cursor: default;
+    }
+
+    .projects .project {
+      margin-bottom: 30px;
+    }
+
+    .projects h3 {
+      color: #ffd700;
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #ffd700;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: rgba(0,0,0,0.6);
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+      width: 100%;
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      main {
+        padding: 10px;
+      }
+      .row {
+        flex-direction: column;
+      }
+      .left-column, .right-column {
+        min-width: 100%;
+      }
+      .hero h1 {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mahendra Kumar Ravi</h1>
+    <p>M.Tech Data Engineering | Aspiring Data Engineer</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Hi, I'm Mahendra Kumar Ravi</h1>
+    <p>Turning Data into Impactful Solutions</p>
+    <a href="https://drive.google.com/file/d/1Yu88aHIV26SG3x9wqxoxQK8AGe4WmNBL/view?usp=sharing" class="resume-button" target="_blank" rel="noopener noreferrer">Download Resume</a>
+  </div>
+
+  <main>
+    <div class="row">
+      <div class="left-column">
+        <section id="about">
+          <h2 class="section-title">About Me</h2>
+          <p>
+            I am passionate about Python programming and specialize in data analysis and machine learning using libraries like NumPy and Pandas.  
+            Skilled in Machine Learning & Deep Learning techniques and proficient with SQL for database management.  
+            I enjoy building intelligent systems and data-driven applications.
+          </p>
+        </section>
+      </div>
+
+      <div class="right-column">
+        <section id="skills">
+          <h2 class="section-title">Skills</h2>
+          <div class="skills">
+            <span>C</span>
+            <span>C++</span>
+            <span>Python</span>
+            <span>SQL</span>
+            <span>JavaScript</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Bootstrap</span>
+            <span>Flask</span>
+            <span>Git & GitHub</span>
+            <span>PHP</span>
+            <span>MySQL</span>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="left-column" style="flex: 1 1 100%;">
+        <section id="projects">
+          <h2 class="section-title">Projects</h2>
+          <div class="projects">
+            <div class="project">
+              <h3>Immediate Medical Help in Rural Area Accidents</h3>
+              <p>This project focuses on providing quick first aid to accident victims in rural areas by connecting them with nearby local doctors. Built using HTML, CSS, JavaScript, PHP, and MySQL, it aims to reduce delays in medical response and ensure timely care in emergencies.</p>
+            </div>
+
+            <div class="project">
+              <h3>Movie Recommendation System</h3>
+              <p>Developed a content-based movie recommendation system using Python. Utilized Pandas and NumPy for data preprocessing and feature extraction, and implemented cosine similarity to recommend movies based on user input. Performed data cleaning and EDA to improve user experience by generating accurate and personalized suggestions.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <p>Email: mahendravits7@gmail.com</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/mahendra-kumar-ravi/" target="_blank" rel="noopener noreferrer">Mahendra Kumar Ravi</a></p>
+      <p>GitHub: <a href="https://github.com/mahendra-kumar-ravi" target="_blank" rel="noopener noreferrer">mahendra-kumar-ravi</a></p>
+    </section>
+    <p>&copy; 2025 Mahendra Kumar Ravi. All rights reserved.</p>
+  </footer>
+</body>
+</html>
